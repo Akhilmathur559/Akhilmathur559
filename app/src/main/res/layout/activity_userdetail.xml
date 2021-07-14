@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Hello,"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:includeFontPadding="false"
+                        android:id="@+id/userprofileclick"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:textSize="22sp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/savebtn"
+                    android:src="@drawable/baseline_post_add_20"/>
+                <ProgressBar
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/progresbarsave"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/profiledetais"
+        android:layout_below="@+id/appbar"
+        android:id="@+id/titlebar"
+        android:orientation="vertical">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilebtn"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/profie"
+            app:shapeAppearance="@style/Widget.MaterialComponents.CircularProgressIndicator" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar1"
+        android:visibility="gone"/>
+</FrameLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/editName"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:hint="Name"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/editAge"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/editName"
+            android:hint="Age"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/blue_border_rounded_cornwe"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/editMobile"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/editAge"
+            android:hint="Mobile No."
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/blue_border_rounded_cornwe"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

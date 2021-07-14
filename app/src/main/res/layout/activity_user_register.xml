@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:background="@drawable/blue_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="User \nRegister \nDetails"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_regular"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/logo"/>
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="36.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+            <!--INPUT-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editName"
+                android:layout_toRightOf="@+id/user_icon"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"/>
+            <!--icon-->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/user_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/name_logo"></ImageView>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginTop="12.7dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+            <!--INPUT-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editAge"
+                android:layout_toRightOf="@+id/password_icon"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Age"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"/>
+            <!--icon-->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/password_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/age_logo"></ImageView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_marginTop="12.7dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+            <!--INPUT-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editMobile"
+                android:layout_toRightOf="@+id/cpassword_icon"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp"/>
+            <!--icon-->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:id="@+id/cpassword_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/ic_baseline_local_phone_24"></ImageView>
+
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/blue_fill__rounded_color"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingTop="14dp"
+                android:id="@+id/registerbtn"
+                android:paddingBottom="14dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/Progressbar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+        <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_marginTop="12.7dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:fontFamily="@font/poppins_regular"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:text="Forget password ?"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textColor="#1566e0"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="10.5sp"/>&ndash;&gt;-->
+
+        <!--    </LinearLayout>-->
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_alignParentBottom="true"-->
+        <!--        android:layout_marginBottom="0dp"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="13.7dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:fontFamily="@font/poppins_regular"-->
+        <!--                android:gravity="center_horizontal"-->
+        <!--                android:text="Or Signup with"-->
+        <!--                android:textColor="#aeaeae"-->
+        <!--                android:textSize="13.3sp" />-->
+        <!--        </LinearLayout>-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="35dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="26dp"-->
+        <!--                android:layout_height="26dp"-->
+        <!--                android:id="@+id/googleAuthbtn"-->
+        <!--                android:src="@drawable/google_logo"/>-->
+        <!--            <ImageView-->
+        <!--                android:layout_width="26dp"-->
+        <!--                android:layout_height="26dp"-->
+        <!--                android:id="@+id/phoneAuthbtn"-->
+        <!--                android:layout_marginLeft="20dp"-->
+        <!--                android:src="@drawable/phone_link"/>-->
+        <!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="&#45;&#45;Skip&#45;&#45;"-->
+<!--            android:gravity="center"-->
+<!--            android:id="@+id/skip"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textColor="@color/blue1"/>-->
+    </LinearLayout>
+
+</RelativeLayout>

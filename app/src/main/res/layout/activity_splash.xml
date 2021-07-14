@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relsplash"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Activity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/notes"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/blue"
+        android:id="@+id/txtnotes"
+        android:visibility="gone"
+        android:fontFamily="@font/poppins_regular"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/blue"
+        android:visibility="gone"
+        android:id="@+id/txtapp"
+        android:layout_marginLeft="212dp"
+        android:fontFamily="@font/poppins_regular"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Notes app lets you lock any note that you want to keep private from anyone else that might use your device. "
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/poppins_regular"/>
+
+</RelativeLayout>

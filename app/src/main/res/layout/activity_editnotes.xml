@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditnotesActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Hello,"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:textSize="22sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/updatebtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/baseline_post_add_20" />
+                <ProgressBar
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/progresbarsave"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:id="@+id/titlebar">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/updateTitle"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:hint="Title"
+            android:paddingStart="20dp"
+            android:layout_margin="10dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/blue_border_rounded_cornwe"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updatecontent"
+        android:textSize="20sp"
+        android:hint="Enter text"
+        android:gravity="top"
+        android:padding="20dp"
+        android:overScrollMode="always"
+        android:layout_below="@+id/titlebar"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/blue"
+        android:background="@drawable/blue_border_rounded_cornwe"/>
+
+
+</RelativeLayout>

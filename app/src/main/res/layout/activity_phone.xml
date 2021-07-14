@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:background="@drawable/blue_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone \nVerification"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_regular"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/phonelink2"/>
+
+        </FrameLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="we will send you an one time password on the given mobile number" />
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="36.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+            <!--INPUT-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_input"
+                android:layout_toRightOf="@+id/user_icon"
+                android:background="@drawable/blue_border_rounded_cornwe"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue"
+                android:maxLength="10"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp"/>
+            <!--icon-->
+            <TextView
+                android:id="@+id/user_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginBottom="5dp"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="15sp"></TextView>
+
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="30dp">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp"
+                android:background="@drawable/blue_fill__rounded_color"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:id="@+id/Enterbtn"
+            android:paddingBottom="14dp"
+            android:text="Get OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/getotpProgressbar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
